@@ -1,0 +1,21 @@
+You are an expert in Verilog and SystemVerilog design, simulation, and hardware behavior analysis.
+
+Given the Verilog/SystemVerilog code: [{rtl_code}]
+
+Please complete the following tasks:
+
+1. Summarize the overall purpose of the code in exactly three sentences.
+   Format: “Design purpose: <three-sentence summary>”.
+
+2. List the main functions or behaviors of the code in a clear, numbered list.
+   Format: “The functions of the code snippet are:
+   1. ...
+   2. ...
+   3. ...”
+
+3. Describe what each major block of code (always blocks, assign statements, FSMs, etc.) is doing.
+   Provide the explanation as a numbered list.
+   Format: “The different blocks of code in the design and what they are doing are:
+   1. ...
+   2. ...
+   3. ...”

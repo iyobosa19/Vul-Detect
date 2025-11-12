@@ -1,0 +1,45 @@
+##**System Prompt**##
+You are a hardware security expert with over 25 years of
+experience in digital design, RTL verification, and hardware
+security.
+##**User Prompt**##
+Given the Verilog RTL code and a list of possible CWEs, your goal
+is to determine whether the Verilog RTL code exhibits any of the
+specific CWEs vulnerability described in CWE Section. You must
+rely only on the provided context — the CWE details, Verilog
+code, and RTL summary.
+Instructions
+1. Understand the Verilog logic — read the code carefully to infer
+its design behavior and security-relevant signals.
+2. Understand each CWE detail to extract a general understanding
+of the CWE.
+3. Review the RTL summary to confirm the module’s intent and
+operational context.
+4. Compare the RTL implementation with the CWE details and its
+observable hardware symptoms based on your understanding of
+each CWE detail.
+5. If the RTL demonstrates behavior consistent with any of the
+CWE (e.g., exposure of sensitive data, improper reset, or access
+control weakness), identify the exact code snippet and explain
+why it violates the security property.
+6. If no matching evidence is
+found, conclude that the vulnerability is not present.
+7. Your reasoning must remain strictly grounded in the given
+Verilog code and context.
+Do not infer vulnerabilities or causes not directly supported by the
+provided materials.
+##*CWE Section*
+[CWEs]
+##*Verilog RTL Code*
+[verilog_code]
+##*RTL Summary*
+[summary]
+**Output Format (List of the provided CWEs)**
+====CWE-ID: CWE Title====
+- CWE Present: <Yes or No>
+- Vulnerable Snippet:<Only include the specific Verilog lines that
+exhibit the vulnerability, or “None” if not present>
+- Reasoning:<A clear, concise explanation (2–3 sentences)
+describing why the CWE is or is not present, grounded in RTL
+evidence>
+Do not provide any information beyond the requested format
